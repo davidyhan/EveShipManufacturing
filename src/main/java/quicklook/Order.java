@@ -4,22 +4,21 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@SuppressWarnings("restriction")
 @XmlRootElement
-public class Order implements Comparable<Order>{
+public class Order implements Comparable<Order> {
 
-    Integer id;
+    private Integer id;
 
-    Integer regionId;
-    Integer stationId;
-    String stationName;
-    Integer range;
-    Double price;
-    Double security;
-    Integer volumeRemaining;
-    Integer MinimumVolume;
-    String expiration;
-    String reportedTime;
+    private Integer regionId;
+    private Integer stationId;
+    private String stationName;
+    private Integer range;
+    private Double price;
+    private Double security;
+    private Integer volumeRemaining;
+    private Integer MinimumVolume;
+    private String expiration;
+    private String reportedTime;
 
     public Integer getRegion() {
         return regionId;

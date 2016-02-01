@@ -20,7 +20,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import properties.Items;
 
-@SuppressWarnings("restriction")
 public class Minerals {
 
     EveCentral marketStat = new EveCentral(EveCentral.marketStatBase);

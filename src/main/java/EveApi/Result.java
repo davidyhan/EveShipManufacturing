@@ -3,7 +3,6 @@ package EveApi;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@SuppressWarnings("restriction")
 @XmlRootElement(name = "result")
 public class Result {
 
@@ -18,9 +17,9 @@ public class Result {
         this.rowset = rowset;
     }
 
-	@Override
-	public String toString() {
-		return rowset.toString();
-	}
+    @Override
+    public String toString() {
+        return rowset.toString();
+    }
 
 }

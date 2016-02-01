@@ -5,7 +5,6 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-@SuppressWarnings("restriction")
 @XmlRootElement(name = "sell_orders")
 public class SellOrders {
 
@@ -20,10 +19,10 @@ public class SellOrders {
         this.listOrders = listOrders;
     }
 
-    public void printCompactPrices(){
-        
-        for(Order o: listOrders){
-            System.out.println("Order: "+ o.getPrice()+ ", Volume remaining: "+ o.getVolumeRemaining());
+    public void printCompactPrices() {
+
+        for (Order o : listOrders) {
+            System.out.println("Order: " + o.getPrice() + ", Volume remaining: " + o.getVolumeRemaining());
         }
     }
 
